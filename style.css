@@ -56,14 +56,14 @@ body {
   display: flex;
   gap: 30px;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .navbar-menu ul li a {
   text-decoration: none;
   color: #111827;
   font-weight: 500;
-  padding: 100px;
+  padding: 10px;
   transition: color 0.3s;
 }
 
