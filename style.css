@@ -6,7 +6,6 @@ body {
   background-color: #fff;
 }
 /* Navbar Styling */
-/* Navbar Styling */
 .navbar {
   background-color: #f1f5f9;
   position: sticky;
@@ -14,6 +13,7 @@ body {
   width: 100%;
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
 }
 
 .navbar-container {
