@@ -176,12 +176,16 @@
 </footer>
 
 <script>
-  const burger = document.getElementById('burger-button');
-  const menu = document.getElementById('navbar-menu');
-
-  burger.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
+document.querySelector('.burger').addEventListener('click', function() {
+  const menu = document.querySelector('.navbar-menu');
+  const burger = this;
+  
+  // Toggle menu
+  menu.classList.toggle('active');
+  
+  // Toggle burger active state
+  burger.classList.toggle('active');
+});
 </script>
 
 
