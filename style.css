@@ -74,7 +74,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .burger {
-    display: ;
+    display: none;
   }
 
   .navbar-container {
