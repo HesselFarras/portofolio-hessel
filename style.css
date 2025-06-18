@@ -6,6 +6,7 @@ body {
   background-color: #fff;
 }
 /* Navbar Styling */
+/* Navbar Styling */
 .navbar {
   background-color: #f1f5f9;
   position: sticky;
@@ -13,7 +14,6 @@ body {
   width: 100%;
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 80px;
 }
 
 .navbar-container {
@@ -40,7 +40,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  display: block; /* Default hidden */
+  display: 0; /* Default hidden */
   align-self: flex-end;
 }
 
@@ -180,15 +180,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-/*   margin-left: 100px; */
+  margin-left: 210px;
 }
-/* Responsif untuk Desktop */
-@media (min-width: 768px) {
-  .social-icons {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
 
 .center {
   text-align: center;
