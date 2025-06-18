@@ -6,7 +6,6 @@ body {
   background-color: #fff;
 }
 /* Navbar Styling */
-/* Navbar Styling */
 .navbar {
   background-color: #f1f5f9;
   position: sticky;
@@ -74,7 +73,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .burger {
-    display: 0;
+    display: block;
   }
 
   .navbar-container {
