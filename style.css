@@ -40,7 +40,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  display: 0; /* Default hidden */
+  display: none; /* Default hidden */
   align-self: flex-end;
 }
 
@@ -74,7 +74,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .burger {
-    display: none;
+    display: block;
   }
 
   .navbar-container {
