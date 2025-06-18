@@ -14,6 +14,12 @@ body {
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 80px;
+  transition: background-color 0.3s ease; /* DITAMBAHKAN: smooth transition */
+}
+
+/* Navbar Active State - Background putih saat menu mobile terbuka */
+.navbar.menu-open {
+  background-color: #ffffff; /* DITAMBAHKAN: background putih saat menu terbuka */
 }
 
 .navbar-container {
@@ -70,6 +76,7 @@ body {
   color: #111827; /* DITAMBAHKAN: warna text gelap */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* DITAMBAHKAN: shadow untuk depth */
 }
+
 /* Menu */
 .navbar-menu {
   display: flex;
@@ -100,31 +107,52 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .burger {
-    display: block;
+    display: block; /* Tampilkan burger button - DIPERBAIKI */
   }
 
   .navbar-container {
     align-items: stretch;
+    flex-direction: row; /* DITAMBAHKAN: untuk posisi logo dan burger secara horizontal */
+    justify-content: space-between; /* DITAMBAHKAN: untuk spacing logo dan burger */
+  }
+
+  .navbar-logo {
+    margin-bottom: 0; /* DITAMBAHKAN: reset margin */
   }
 
   .navbar-menu {
     display: none;
     width: 100%;
+    position: absolute; /* DITAMBAHKAN: untuk dropdown menu */
+    top: 100%; /* DITAMBAHKAN: posisi di bawah navbar */
+    left: 0; /* DITAMBAHKAN */
+    background-color: #f1f5f9; /* Background default */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* DITAMBAHKAN: shadow untuk dropdown */
+    transition: background-color 0.3s ease; /* DITAMBAHKAN: smooth transition */
+  }
+
+  /* Menu background putih saat navbar aktif */
+  .navbar.menu-open .navbar-menu {
+    background-color: #ffffff; /* DITAMBAHKAN: background putih untuk dropdown menu */
   }
 
   .navbar-menu.active {
     display: block;
-    margin-top: 12px;
+    margin-top: 0; /* DIPERBAIKI: dari 12px ke 0 */
   }
 
   .navbar-menu ul {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    padding: 20px; /* DITAMBAHKAN: padding untuk dropdown menu */
+  }
+
+  /* DITAMBAHKAN: Agar navbar container dapat menampung dropdown menu */
+  .navbar {
+    position: relative;
   }
 }
-
-
 
 .container {
   max-width: 1200px;
