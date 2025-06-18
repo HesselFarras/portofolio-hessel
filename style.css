@@ -37,13 +37,39 @@ body {
 /* Burger Button */
 .burger {
   font-size: 24px;
-  background: white;
+  background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Default hidden */
+  display: none; /* Default hidden - DIPERBAIKI */
   align-self: flex-end;
+  padding: 8px 12px; /* DITAMBAHKAN: padding untuk area klik */
+  border-radius: 6px; /* DITAMBAHKAN: border radius */
+  transition: background-color 0.3s ease; /* DITAMBAHKAN: smooth transition */
 }
 
+/* Burger Button Hover State */
+.burger:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* DITAMBAHKAN: hover effect */
+}
+
+/* Burger Button Active State (saat diklik) */
+.burger:active {
+  background-color: #ffffff; /* DITAMBAHKAN: background putih saat diklik */
+  color: #111827; /* DITAMBAHKAN: warna text gelap untuk kontras */
+}
+
+/* Burger Button Focus State (untuk keyboard navigation) */
+.burger:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); /* DITAMBAHKAN: focus state */
+}
+
+/* Burger Button Active Class (untuk toggle state) */
+.burger.active {
+  background-color: #ffffff; /* DITAMBAHKAN: background putih saat menu terbuka */
+  color: #111827; /* DITAMBAHKAN: warna text gelap */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* DITAMBAHKAN: shadow untuk depth */
+}
 /* Menu */
 .navbar-menu {
   display: flex;
