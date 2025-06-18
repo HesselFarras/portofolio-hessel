@@ -40,7 +40,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  display: 0; /* Default hidden */
+  display: block; /* Default hidden */
   align-self: flex-end;
 }
 
