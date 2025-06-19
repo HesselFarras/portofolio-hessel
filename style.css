@@ -281,6 +281,9 @@ body {
   transform: scale(1.1);
 }
 
+.projects-bg {
+  background-color: E0E0E0;
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -289,7 +292,7 @@ body {
 }
 
 .project-card {
-  background-color: #E0E0E0;
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
