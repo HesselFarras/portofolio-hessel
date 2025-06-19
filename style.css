@@ -179,6 +179,10 @@ body {
   background-color: #d1d5db;
 }
 
+.semi-darker-bg {
+  background-color: #BEBEBE;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
