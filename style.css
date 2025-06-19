@@ -281,6 +281,42 @@ body {
   transform: scale(1.1);
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin: 15px 15px 5px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin: 0 15px 15px;
+  color: #555;
+}
 .certificate-gallery {
   display: flex;
   flex-wrap: wrap;
